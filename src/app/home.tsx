@@ -1,4 +1,8 @@
+import { Facebook } from "lucide-react";
+import Image from "next/image";
 import React from "react";
+import { BsCart, BsFacebook, BsHeart, BsInstagram, BsPinterest, BsTwitter } from "react-icons/bs";
+
 
 const Home = () => {
     return (
@@ -46,8 +50,7 @@ const Home = () => {
                                 <div className="header-main-content-wrapper">
                                     <div className="header-main-left header-main-left-header1">
                                         <div className="header-logo header1-logo">
-                                            <a href="index.html" className="logo-bl"><img src="assets/img/logo/logo-bl-p.png"
-                                                alt="logo-img" /></a>
+                                            <a href="index.html" className="logo-bl"><Image height={200} width={200} src="/assets/img/logo/logo-bl-p.png" alt="logo-img" /></a>
                                         </div>
                                         <div className="main-menu main-menu2 d-none d-lg-block">
                                             <nav id="mobile-menu">
@@ -101,13 +104,13 @@ const Home = () => {
                                         <div className="action-list d-none d-xl-flex action-list-header2">
                                             <div className="action-item action-item-cart">
                                                 <a href="javascript:void(0)" className="view-cart-button">
-                                                    <i className="fal fa-shopping-bag"></i>
+                                                    <BsCart />
                                                     <span className="action-item-number">3</span></a>
                                                 <a href="#" className="cart-items-price">$78.00</a>
                                             </div>
                                             <div className="action-item action-item-wishlist">
                                                 <a href="javascript:void(0)" className="view-wishlist-button">
-                                                    <i className="fal fa-heart"></i>
+                                                    <i className="pl-32"><BsHeart /></i>
                                                     <span className="action-item-number">2</span></a>
                                             </div>
                                             <div className="user-btn">
@@ -237,7 +240,7 @@ const Home = () => {
                                 <div className="row align-items-center">
                                     <div className="col-9">
                                         <a href="index.html">
-                                            <img src="assets/img/logo/logo-bl.png" alt="Logo" />
+                                            <Image height={200} width={200} src="/assets/img/logo/logo-bl.png" alt="Logo" />
                                         </a>
                                     </div>
                                     <div className="col-3 text-end"><button className="side-info-close"><i className="fal fa-times"></i></button>
@@ -280,7 +283,7 @@ const Home = () => {
                         <div className="sidebar-action-list">
                             <div className="sidebar-list-item">
                                 <div className="product-image pos-rel">
-                                    <a href="shop-details.html" className=""><img src="assets/img/shirt/3/1.jpg" alt="img" /></a>
+                                    <a href="shop-details.html" className=""><Image height={200} width={200} src="/assets/img/shirt/3/1.jpg" alt="img" /></a>
                                 </div>
                                 <div className="product-desc">
                                     <div className="product-name"><a href="shop-details.html">Felted Shirt for Man</a></div>
@@ -293,7 +296,7 @@ const Home = () => {
                             </div>
                             <div className="sidebar-list-item">
                                 <div className="product-image pos-rel">
-                                    <a href="shop-details.html" className=""><img src="assets/img/pant/1/4.jpg" alt="img" /></a>
+                                    <a href="shop-details.html" className=""><Image height={200} width={200} src="/assets/img/pant/1/1.webp" alt="img" /></a>
                                 </div>
                                 <div className="product-desc">
                                     <div className="product-name"><a href="shop-details.html">Denim Jeans Pant</a></div>
@@ -306,7 +309,7 @@ const Home = () => {
                             </div>
                             <div className="sidebar-list-item">
                                 <div className="product-image pos-rel">
-                                    <a href="shop-details.html" className=""><img src="assets/img/jacket/2/2.jpg" alt="img" /></a>
+                                    <a href="shop-details.html" className=""><Image height={200} width={200} src="/assets/img/jacket/2/2.jpg" alt="img" /></a>
                                 </div>
                                 <div className="product-desc">
                                     <div className="product-name"><a href="shop-details.html">Denim Official Jacket</a></div>
@@ -336,7 +339,7 @@ const Home = () => {
                         <div className="sidebar-action-list">
                             <div className="sidebar-list-item">
                                 <div className="product-image pos-rel">
-                                    <a href="shop-details.html" className=""><img src="assets/img/shirt/1/1.jpg" alt="img" /></a>
+                                    <a href="shop-details.html" className=""><Image height={200} width={200} src="/assets/img/shirt/1/1.jpg" alt="img" /></a>
                                 </div>
                                 <div className="product-desc">
                                     <div className="product-name"><a href="shop-details.html">Women's Faux-Trim Shirt</a></div>
@@ -348,7 +351,7 @@ const Home = () => {
                             </div>
                             <div className="sidebar-list-item">
                                 <div className="product-image pos-rel">
-                                    <a href="shop-details.html" className=""><img src="assets/img/pant/1/1.jpg" alt="img" /></a>
+                                    <a href="shop-details.html" className=""><Image height={200} width={200} src="/assets/img/pant/1/1.jpg" alt="img" /></a>
                                 </div>
                                 <div className="product-desc">
                                     <div className="product-name"><a href="shop-details.html">Skinny Jeans Pant</a></div>
@@ -467,7 +470,7 @@ const Home = () => {
                             <div className="col-xl-4 col-lg-6 col-md-6">
                                 <div className="category-banner-single mb-30 pos-rel">
                                     <div className="category-banner-img">
-                                        <img src="assets/img/category_banner/category-banner1.jpg" alt="banner-img" />
+                                        <Image height={200} width={200} src="/assets/img/category_banner/category-banner1.jpg" alt="banner-img" />
                                     </div>
                                     <div className="category-banner-inner">
                                         <div className="category-banner-content">
@@ -481,7 +484,7 @@ const Home = () => {
                             <div className="col-xl-4 col-lg-6 col-md-6 order-xl-3">
                                 <div className="category-banner-single mb-30 pos-rel">
                                     <div className="category-banner-img">
-                                        <img src="assets/img/category_banner/category-banner4.jpg" alt="banner-img" />
+                                        <Image height={200} width={200} src="/assets/img/category_banner/category-banner4.jpg" alt="banner-img" />
                                     </div>
                                     <div className="category-banner-inner">
                                         <div className="category-banner-content">
@@ -497,7 +500,7 @@ const Home = () => {
                                     <div className="col-xl-12 col-lg-6 col-md-6">
                                         <div className="category-banner-single mb-30 pos-rel">
                                             <div className="category-banner-img">
-                                                <img src="assets/img/category_banner/category-banner2.jpg" alt="banner-img" />
+                                                <Image height={200} width={200} src="/assets/img/category_banner/category-banner2.jpg" alt="banner-img" />
                                             </div>
                                             <div className="category-banner-inner align-items-end">
                                                 <div className="category-banner-content">
@@ -511,7 +514,7 @@ const Home = () => {
                                     <div className="col-xl-12 col-lg-6 col-md-6">
                                         <div className="category-banner-single mb-30 pos-rel">
                                             <div className="category-banner-img">
-                                                <img src="assets/img/category_banner/category-banner3.jpg" alt="banner-img" />
+                                                <Image height={200} width={200} src="/assets/img/category_banner/category-banner3.jpg" alt="banner-img" />
                                             </div>
                                             <div className="category-banner-inner justify-content-end">
                                                 <div className="category-banner-content">
@@ -564,7 +567,7 @@ const Home = () => {
                                         <div className="products-wrapper">
                                             <div className="single-product">
                                                 <div className="product-image pos-rel">
-                                                    <a href="shop-details.html" className=""><img src="assets/img/shirt/1/1.webp"
+                                                    <a href="shop-details.html" className=""><Image height={200} width={200} src="/assets/img/shirt/1/1.webp"
                                                         alt="img" /></a>
                                                     <div className="product-action">
                                                         <a href="#" className="quick-view-btn"><i className="fal fa-eye"></i></a>
@@ -586,23 +589,23 @@ const Home = () => {
                                                     </div>
                                                     <ul className="product-color-nav">
                                                         <li className="cl-yellow active">
-                                                            <img src="assets/img/shirt/1/1.webp" alt="img" />
+                                                            <Image height={200} width={200} src="/assets/img/shirt/1/1.webp" alt="img" />
                                                         </li>
                                                         <li className="cl-navy">
-                                                            <img src="./assets/img/shirt/1/2.webp" alt="img" />
+                                                            <Image height={200} width={200} src="/assets/img/shirt/1/2.webp" alt="img" />
                                                         </li>
                                                         <li className="cl-wood ">
-                                                            <img src="./assets/img/shirt/1/3.webp" alt="img" />
+                                                            <Image height={200} width={200} src="/assets/img/shirt/1/3.webp" alt="img" />
                                                         </li>
                                                         <li className="cl-orange">
-                                                            <img src="./assets/img/shirt/1/4.webp" alt="img" />
+                                                            <Image height={200} width={200} src="/assets/img/shirt/1/4.webp" alt="img" />
                                                         </li>
                                                     </ul>
                                                 </div>
                                             </div>
                                             <div className="single-product">
                                                 <div className="product-image pos-rel">
-                                                    <a href="shop-details.html" className=""><img src="assets/img/pant/1/1.jpg" alt="img" /></a>
+                                                    <a href="shop-details.html" className=""><Image height={200} width={400} src="/assets/img/shirt/2/1.webp" alt="img" /></a>
                                                     <div className="product-action">
                                                         <a href="#" className="quick-view-btn"><i className="fal fa-eye"></i></a>
                                                         <a href="#" className="wishlist-btn"><i className="fal fa-heart"></i></a>
@@ -622,20 +625,17 @@ const Home = () => {
                                                     </div>
                                                     <ul className="product-color-nav">
                                                         <li className="cl-black active">
-                                                            <img src="assets/img/pant/1/1.jpg" alt="img" />
+                                                            <Image height={200} width={200} src="" alt="img" />
                                                         </li>
                                                         <li className="cl-wood">
-                                                            <img src="assets/img/pant/1/4.jpg" alt="img" />
-                                                        </li>
-                                                        <li className="cl-navy">
-                                                            <img src="assets/img/pant/1/4.jpg" alt="img" />
+                                                            <Image height={200} width={200} src="/assets/img/pant/1/1.webp" alt="img" />
                                                         </li>
                                                     </ul>
                                                 </div>
                                             </div>
                                             <div className="single-product">
                                                 <div className="product-image pos-rel">
-                                                    <a href="shop-details.html" className=""><img src="assets/img/pant/2/1.jpg" alt="img" /></a>
+                                                    <a href="shop-details.html" className=""><Image height={200} width={200} src="/assets/img/bag/1/1.webp" alt="img" /></a>
                                                     <div className="product-action">
                                                         <a href="#" className="quick-view-btn"><i className="fal fa-eye"></i></a>
                                                         <a href="#" className="wishlist-btn"><i className="fal fa-heart"></i></a>
@@ -657,20 +657,20 @@ const Home = () => {
                                                     </div>
                                                     <ul className="product-color-nav">
                                                         <li className="cl-brown active">
-                                                            <img src="assets/img/shirt/2/1.webp" alt="img" />
+                                                            <Image height={200} width={200} src="/assets/img/shirt/2/1.webp" alt="img" />
                                                         </li>
                                                         <li className="cl-ash">
-                                                            <img src="assets/img/pant/2/1.webp" alt="img" />
+                                                            <Image height={200} width={200} src="/assets/img/shirt/2/1.webp" alt="img" />
                                                         </li>
                                                         <li className="cl-navy">
-                                                            <img src="assets/img/shirt/2/3.webp" alt="img" />
+                                                            <Image height={200} width={200} src="/assets/img/shirt/2/3.webp" alt="img" />
                                                         </li>
                                                     </ul>
                                                 </div>
                                             </div>
                                             <div className="single-product">
                                                 <div className="product-image pos-rel">
-                                                    <a href="shop-details.html" className=""><img src="assets/img/shoe/1.jpg" alt="img" /></a>
+                                                    <a href="shop-details.html" className=""><Image height={200} width={200} src="/assets/img/blazer/1/1.webp" alt="img" /></a>
                                                     <div className="product-action">
                                                         <a href="#" className="quick-view-btn"><i className="fal fa-eye"></i></a>
                                                         <a href="#" className="wishlist-btn"><i className="fal fa-heart"></i></a>
@@ -691,7 +691,7 @@ const Home = () => {
                                             </div>
                                             <div className="single-product">
                                                 <div className="product-image pos-rel">
-                                                    <a href="shop-details.html" className=""><img src="assets/img/shirt/3/1.jpg" alt="img" /></a>
+                                                    <a href="shop-details.html" className=""><Image height={200} width={200} src="/assets/img/H&M Bathrobe/1.webp" alt="img" /></a>
                                                     <div className="product-action">
                                                         <a href="#" className="quick-view-btn"><i className="fal fa-eye"></i></a>
                                                         <a href="#" className="wishlist-btn"><i className="fal fa-heart"></i></a>
@@ -710,23 +710,23 @@ const Home = () => {
                                                     </div>
                                                     <ul className="product-color-nav">
                                                         <li className="cl-yellow active">
-                                                            <img src="assets/img/shirt/3/1.jpg" alt="img" />
+                                                            <Image height={200} width={200} src="/assets/img/shirt/3/1.webp" alt="img" />
                                                         </li>
                                                         <li className="cl-black">
-                                                            <img src="assets/img/shirt/3/2.jpg" alt="img" />
+                                                            <Image height={200} width={200} src="/assets/img/shirt/3/2.webp" alt="img" />
                                                         </li>
                                                         <li className="cl-navy">
-                                                            <img src="assets/img/shirt/3/3.jpg" alt="img" />
+                                                            <Image height={200} width={200} src="/assets/img/shirt/3/3.webp" alt="img" />
                                                         </li>
                                                         <li className="cl-orange">
-                                                            <img src="assets/img/shirt/3/4.jpg" alt="img" />
+                                                            <Image height={200} width={200} src="/assets/img/shirt/3/4.webp" alt="img" />
                                                         </li>
                                                     </ul>
                                                 </div>
                                             </div>
                                             <div className="single-product">
                                                 <div className="product-image pos-rel">
-                                                    <a href="shop-details.html" className=""><img src="assets/img/bag/1.jpg" alt="img" /></a>
+                                                    <a href="shop-details.html" className=""><Image height={200} width={200} src="/assets/img/shirt/3/1.webp" alt="img" /></a>
                                                     <div className="product-action">
                                                         <a href="#" className="quick-view-btn"><i className="fal fa-eye"></i></a>
                                                         <a href="#" className="wishlist-btn"><i className="fal fa-heart"></i></a>
@@ -747,13 +747,13 @@ const Home = () => {
                                                     </div>
                                                     <ul className="product-color-nav">
                                                         <li className="cl-brown active">
-                                                            <img src="assets/img/bag/1.jpg" alt="img" />
+                                                            <Image height={200} width={200} src="/assets/img/bag/1/1.webp" alt="img" />
                                                         </li>
                                                         <li className="cl-ash">
-                                                            <img src="assets/img/bag/2.jpg" alt="img" />
+                                                            <Image height={200} width={200} src="/assets/img/bag/1/2.webp" alt="img" />
                                                         </li>
                                                         <li className="cl-black">
-                                                            <img src="assets/img/bag/3.jpg" alt="img" />
+                                                            <Image height={200} width={200} src="/assets/img/bag/1/3.webp" alt="img" />
 
                                                         </li>
                                                     </ul>
@@ -761,8 +761,8 @@ const Home = () => {
                                             </div>
                                             <div className="single-product">
                                                 <div className="product-image pos-rel">
-                                                    <a href="shop-details.html" className=""><img
-                                                        src="assets/img/product/800_1034/Image-2-1.jpg" alt="img" /></a>
+                                                    <a href="shop-details.html" className=""><Image height={200} width={200}
+                                                        src="/assets/img/sleeveshirt/1/1.webp" alt="img" /></a>
                                                     <div className="product-action">
                                                         <a href="#" className="quick-view-btn"><i className="fal fa-eye"></i></a>
                                                         <a href="#" className="wishlist-btn"><i className="fal fa-heart"></i></a>
@@ -783,8 +783,8 @@ const Home = () => {
                                             </div>
                                             <div className="single-product">
                                                 <div className="product-image pos-rel">
-                                                    <a href="shop-details.html" className=""><img
-                                                        src="assets/img/product/800_1034/Image-3-1.jpg" alt="img" /></a>
+                                                    <a href="shop-details.html" className=""><Image height={200} width={200}
+                                                        src="/assets/img/pant/1/1.webp" alt="img" /></a>
                                                     <div className="product-action">
                                                         <a href="#" className="quick-view-btn"><i className="fal fa-eye"></i></a>
                                                         <a href="#" className="wishlist-btn"><i className="fal fa-heart"></i></a>
@@ -809,8 +809,8 @@ const Home = () => {
                                             </div>
                                             <div className="single-product">
                                                 <div className="product-image pos-rel">
-                                                    <a href="shop-details.html" className=""><img
-                                                        src="assets/img/product/800_1034/Image-4-1.jpg" alt="img" /></a>
+                                                    <a href="shop-details.html" className=""><Image height={200} width={200}
+                                                        src="/assets/img/jacket/2/1.webp" alt="img" /></a>
                                                     <div className="product-action">
                                                         <a href="#" className="quick-view-btn"><i className="fal fa-eye"></i></a>
                                                         <a href="#" className="wishlist-btn"><i className="fal fa-heart"></i></a>
@@ -831,8 +831,8 @@ const Home = () => {
                                             </div>
                                             <div className="single-product">
                                                 <div className="product-image pos-rel">
-                                                    <a href="shop-details.html" className=""><img
-                                                        src="assets/img/product/800_1034/Image-16-1.jpg" alt="img" /></a>
+                                                    <a href="shop-details.html" className=""><Image height={200} width={200}
+                                                        src="/assets/img/bag/2/1.webp" alt="img" /></a>
                                                     <div className="product-action">
                                                         <a href="#" className="quick-view-btn"><i className="fal fa-eye"></i></a>
                                                         <a href="#" className="wishlist-btn"><i className="fal fa-heart"></i></a>
@@ -856,7 +856,7 @@ const Home = () => {
                                             </div>
                                             <div className="single-product">
                                                 <div className="product-image pos-rel">
-                                                    <a href="shop-details.html" className=""><img src="assets/img/product/product-img1.jpg"
+                                                    <a href="shop-details.html" className=""><Image height={200} width={200} src="/assets/img/ring/1.webp"
                                                         alt="img" /></a>
                                                     <div className="product-action">
                                                         <a href="#" className="quick-view-btn"><i className="fal fa-eye"></i></a>
@@ -878,7 +878,7 @@ const Home = () => {
                                             </div>
                                             <div className="single-product">
                                                 <div className="product-image pos-rel">
-                                                    <a href="shop-details.html" className=""><img src="assets/img/sunglass/2.jpg"
+                                                    <a href="shop-details.html" className=""><Image height={200} width={200} src="/assets/img/ring/2/1.webp"
                                                         alt="img" /></a>
                                                     <div className="product-action">
                                                         <a href="#" className="quick-view-btn"><i className="fal fa-eye"></i></a>
@@ -898,26 +898,18 @@ const Home = () => {
                                                     </div>
                                                     <ul className="product-color-nav">
                                                         <li className="cl-black active">
-                                                            <img src="assets/img/sunglass/2.jpg" alt="img" />
+                                                            <Image height={200} width={200} src="/assets/img/ring/2/1.webp" alt="img" />
                                                         </li>
                                                         <li className="cl-ash">
-                                                            <img src="assets/img/sunglass/5.jpg" alt="img" />
+                                                            <Image height={200} width={200} src="/assets/img/ring/2/2.webp" alt="img" />
                                                         </li>
-                                                        <li className="cl-brown">
-                                                            <img src="assets/img/sunglass/8.jpg" alt="img" />
-                                                        </li>
-                                                        <li className="cl-navy">
-                                                            <img src="assets/img/sunglass/11.jpg" alt="img" />
-                                                        </li>
-                                                        <li className="cl-wood">
-                                                            <img src="assets/img/sunglass/14.jpg" alt="img" />
-                                                        </li>
+
                                                     </ul>
                                                 </div>
                                             </div>
                                             <div className="single-product">
                                                 <div className="product-image pos-rel">
-                                                    <a href="shop-details.html" className=""><img src="assets/img/shirt/2/1.jpg" alt="img" /></a>
+                                                    <a href="shop-details.html" className=""><Image height={200} width={200} src="/assets/img/shirt/4/1.webp" alt="img" /></a>
                                                     <div className="product-action">
                                                         <a href="#" className="quick-view-btn"><i className="fal fa-eye"></i></a>
                                                         <a href="#" className="wishlist-btn"><i className="fal fa-heart"></i></a>
@@ -937,24 +929,21 @@ const Home = () => {
                                                     </div>
                                                     <ul className="product-color-nav">
                                                         <li className="cl-navy active">
-                                                            <img src="assets/img/shirt/2/1.jpg" alt="img" />
+                                                            <Image height={200} width={200} src="/assets/img/shirt/2/1.webp" alt="img" />
                                                         </li>
                                                         <li className="cl-pink">
-                                                            <img src="assets/img/shirt/2/4.jpg" alt="img" />
+                                                            <Image height={200} width={200} src="/assets/img/shirt/2/2.webp" alt="img" />
                                                         </li>
                                                         <li className="cl-light-white">
-                                                            <img src="assets/img/shirt/2/7.jpg" alt="img" />
-                                                        </li>
-                                                        <li className="cl-ash">
-                                                            <img src="assets/img/shirt/2/7.jpg" alt="img" />
+                                                            <Image height={200} width={200} src="/assets/img/shirt/2/3.webp" alt="img" />
                                                         </li>
                                                     </ul>
                                                 </div>
                                             </div>
                                             <div className="single-product">
                                                 <div className="product-image pos-rel">
-                                                    <a href="shop-details.html" className=""><img
-                                                        src="assets/img/product/800_1034/Image-5-1.jpg" alt="img" /></a>
+                                                    <a href="shop-details.html" className=""><Image height={200} width={200}
+                                                        src="/assets/img/t-shirt/1/1.webp" alt="img" /></a>
                                                     <div className="product-action">
                                                         <a href="#" className="quick-view-btn"><i className="fal fa-eye"></i></a>
                                                         <a href="#" className="wishlist-btn"><i className="fal fa-heart"></i></a>
@@ -972,16 +961,16 @@ const Home = () => {
                                                     </div>
                                                     <ul className="product-color-nav">
                                                         <li className="cl-black">
-                                                            <img src="./assets/img/blazer/1/1.webp" alt="" />
+                                                            <Image height={200} width={200} src="/assets/img/blazer/1/1.webp" alt="" />
                                                         </li>
                                                         <li className="cl-orange">
-                                                            <img src="" alt="" />
+                                                            <Image height={200} width={200} src="/assets/img/blazer/1/1.webp" alt="" />
                                                         </li>
                                                         <li className="cl-navy">
-                                                            <img src="" alt="" />
+                                                            <Image height={200} width={200} src="/assets/img/blazer/1/1.webp" alt="" />
                                                         </li>
                                                         <li className="cl-light-white">
-                                                            <img src="" alt="" />
+                                                            <Image height={200} width={200} src="/assets/img/blazer/1/1.webp" alt="" />
                                                         </li>
 
                                                     </ul>
@@ -990,8 +979,8 @@ const Home = () => {
                                             </div>
                                             <div className="single-product">
                                                 <div className="product-image pos-rel">
-                                                    <a href="shop-details.html" className=""><img
-                                                        src="assets/img/product/800_1034/Image-1-1.jpg" alt="img" /></a>
+                                                    <a href="shop-details.html" className=""><Image height={200} width={200}
+                                                        src="/assets/img/t-shirt/2/1.webp" alt="img" /></a>
                                                     <div className="product-action">
                                                         <a href="#" className="quick-view-btn"><i className="fal fa-eye"></i></a>
                                                         <a href="#" className="wishlist-btn"><i className="fal fa-heart"></i></a>
@@ -1012,13 +1001,13 @@ const Home = () => {
                                                     </div>
                                                     <ul className="product-color-nav">
                                                         <li className="cl-light-white">
-                                                            <img src="assets/img/product/800_1034/Image-1-2.jpg" alt="img" />
+                                                            {/* <Image height={200} width={200} src="/assets/img/product/800_1034/Image-1-2.jpg" alt="img" /> */}
                                                         </li>
                                                         <li className="cl-navy active">
-                                                            <img src="assets/img/product/800_1034/Image-1-1.jpg" alt="img" />
+                                                            {/* <Image height={200} width={200} src="/assets/img/product/800_1034/Image-1-1.jpg" alt="img" /> */}
                                                         </li>
                                                         <li className="cl-black active">
-                                                            <img src="assets/img/product/800_1034/Image-1-1.jpg" alt="img" />
+                                                            {/* <Image height={200} width={200} src="/assets/img/product/800_1034/Image-1-1.jpg" alt="img" /> */}
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -1030,7 +1019,7 @@ const Home = () => {
 
                                             <div className="single-product">
                                                 <div className="product-image pos-rel">
-                                                    <a href="shop-details.html" className=""><img src="assets/img/shirt/3/1.jpg" alt="img" /></a>
+                                                    <a href="shop-details.html" className=""><Image height={200} width={200} src="/assets/img/shirt/3/1.webp" alt="img" /></a>
                                                     <div className="product-action">
                                                         <a href="#" className="quick-view-btn"><i className="fal fa-eye"></i></a>
                                                         <a href="#" className="wishlist-btn"><i className="fal fa-heart"></i></a>
@@ -1049,23 +1038,23 @@ const Home = () => {
                                                     </div>
                                                     <ul className="product-color-nav">
                                                         <li className="cl-yellow active">
-                                                            <img src="assets/img/shirt/3/1.jpg" alt="img" />
+                                                            <Image height={200} width={200} src="/assets/img/shirt/3/1.jpg" alt="img" />
                                                         </li>
                                                         <li className="cl-black">
-                                                            <img src="assets/img/shirt/3/2.jpg" alt="img" />
+                                                            <Image height={200} width={200} src="/assets/img/shirt/3/2.jpg" alt="img" />
                                                         </li>
                                                         <li className="cl-navy">
-                                                            <img src="assets/img/shirt/3/3.jpg" alt="img" />
+                                                            <Image height={200} width={200} src="/assets/img/shirt/3/3.jpg" alt="img" />
                                                         </li>
                                                         <li className="cl-orange">
-                                                            <img src="assets/img/shirt/3/4.jpg" alt="img" />
+                                                            <Image height={200} width={200} src="/assets/img/shirt/3/4.jpg" alt="img" />
                                                         </li>
                                                     </ul>
                                                 </div>
                                             </div>
                                             <div className="single-product">
                                                 <div className="product-image pos-rel">
-                                                    <a href="shop-details.html" className=""><img src="assets/img/bag/1.jpg" alt="img" /></a>
+                                                    <a href="shop-details.html" className=""><Image height={200} width={200} src="/assets/img/bag/1.webp" alt="img" /></a>
                                                     <div className="product-action">
                                                         <a href="#" className="quick-view-btn"><i className="fal fa-eye"></i></a>
                                                         <a href="#" className="wishlist-btn"><i className="fal fa-heart"></i></a>
@@ -1086,21 +1075,21 @@ const Home = () => {
                                                     </div>
                                                     <ul className="product-color-nav">
                                                         <li className="cl-brown active">
-                                                            <img src="assets/img/bag/1.jpg" alt="img" />
+                                                            <Image height={200} width={200} src="/assets/img/bag/1.jpg" alt="img" />
                                                         </li>
                                                         <li className="cl-ash">
-                                                            <img src="assets/img/bag/2.jpg" alt="img" />
+                                                            <Image height={200} width={200} src="/assets/img/bag/2.jpg" alt="img" />
                                                         </li>
                                                         <li className="cl-black">
-                                                            <img src="assets/img/bag/3.jpg" alt="img" />
+                                                            <Image height={200} width={200} src="/assets/img/bag/3.jpg" alt="img" />
                                                         </li>
                                                     </ul>
                                                 </div>
                                             </div>
                                             <div className="single-product">
                                                 <div className="product-image pos-rel">
-                                                    <a href="shop-details.html" className=""><img
-                                                        src="assets/img/product/800_1034/Image-2-1.jpg" alt="img" /></a>c c
+                                                    <a href="shop-details.html" className=""><Image height={200} width={200}
+                                                        src="/assets/img/shirt/3/2.webp" alt="img" /></a>c c
                                                     <div className="product-action">
                                                         <a href="#" className="quick-view-btn"><i className="fal fa-eye"></i></a>
                                                         <a href="#" className="wishlist-btn"><i className="fal fa-heart"></i></a>
@@ -1121,8 +1110,8 @@ const Home = () => {
                                             </div>
                                             <div className="single-product">
                                                 <div className="product-image pos-rel">
-                                                    <a href="shop-details.html" className=""><img
-                                                        src="assets/img/product/800_1034/Image-3-1.jpg" alt="img" /></a>
+                                                    <a href="shop-details.html" className=""><Image height={200} width={200}
+                                                        src="/assets/img/product/800_1034/Image-3-1.jpg" alt="img" /></a>
                                                     <div className="product-action">
                                                         <a href="#" className="quick-view-btn"><i className="fal fa-eye"></i></a>
                                                         <a href="#" className="wishlist-btn"><i className="fal fa-heart"></i></a>
@@ -1147,7 +1136,7 @@ const Home = () => {
                                             </div>
                                             <div className="single-product">
                                                 <div className="product-image pos-rel">
-                                                    <a href="shop-details.html" className=""><img src="assets/img/shirt/1/1.jpg" alt="img" /></a>
+                                                    <a href="shop-details.html" className=""><Image height={200} width={200} src="/assets/img/shirt/1/1.jpg" alt="img" /></a>
                                                     <div className="product-action">
                                                         <a href="#" className="quick-view-btn"><i className="fal fa-eye"></i></a>
                                                         <a href="#" className="wishlist-btn"><i className="fal fa-heart"></i></a>
@@ -1168,23 +1157,23 @@ const Home = () => {
                                                     </div>
                                                     <ul className="product-color-nav">
                                                         <li className="cl-pink active">
-                                                            <img src="assets/img/shirt/1/1.jpg" alt="img" />
+                                                            <Image height={200} width={200} src="/assets/img/shirt/1/1.jpg" alt="img" />
                                                         </li>
                                                         <li className="cl-light-white">
-                                                            <img src="assets/img/shirt/1/3.jpg" alt="img" />
+                                                            <Image height={200} width={200} src="/assets/img/shirt/1/3.jpg" alt="img" />
                                                         </li>
                                                         <li className="cl-black">
-                                                            <img src="assets/img/shirt/1/5.jpg" alt="img" />
+                                                            <Image height={200} width={200} src="/assets/img/shirt/1/5.jpg" alt="img" />
                                                         </li>
                                                         <li className="cl-navy">
-                                                            <img src="assets/img/shirt/1/7.jpg" alt="img" />
+                                                            <Image height={200} width={200} src="/assets/img/shirt/1/7.jpg" alt="img" />
                                                         </li>
                                                     </ul>
                                                 </div>
                                             </div>
                                             <div className="single-product">
                                                 <div className="product-image pos-rel">
-                                                    <a href="shop-details.html" className=""><img src="assets/img/pant/1/1.jpg" alt="img" /></a>
+                                                    <a href="shop-details.html" className=""><Image height={200} width={200} src="/assets/img/pant/1/1.jpg" alt="img" /></a>
                                                     <div className="product-action">
                                                         <a href="#" className="quick-view-btn"><i className="fal fa-eye"></i></a>
                                                         <a href="#" className="wishlist-btn"><i className="fal fa-heart"></i></a>
@@ -1203,17 +1192,17 @@ const Home = () => {
                                                     </div>
                                                     <ul className="product-color-nav">
                                                         <li className="cl-navy active">
-                                                            <img src="assets/img/pant/1/1.jpg" alt="img" />
+                                                            <Image height={200} width={200} src="/assets/img/pant/1/1.jpg" alt="img" />
                                                         </li>
                                                         <li className="cl-light-white">
-                                                            <img src="assets/img/pant/1/4.jpg" alt="img" />
+                                                            <Image height={200} width={200} src="/assets/img/pant/1/4.jpg" alt="img" />
                                                         </li>
                                                     </ul>
                                                 </div>
                                             </div>
                                             <div className="single-product">
                                                 <div className="product-image pos-rel">
-                                                    <a href="shop-details.html" className=""><img src="assets/img/pant/2/1.jpg" alt="img" /></a>
+                                                    <a href="shop-details.html" className=""><Image height={200} width={200} src="/assets/img/pant/2/1.jpg" alt="img" /></a>
                                                     <div className="product-action">
                                                         <a href="#" className="quick-view-btn"><i className="fal fa-eye"></i></a>
                                                         <a href="#" className="wishlist-btn"><i className="fal fa-heart"></i></a>
@@ -1235,20 +1224,20 @@ const Home = () => {
                                                     </div>
                                                     <ul className="product-color-nav">
                                                         <li className="cl-brown active">
-                                                            <img src="assets/img/pant/2/1.jpg" alt="img" />
+                                                            <Image height={200} width={200} src="/assets/img/pant/2/1.jpg" alt="img" />
                                                         </li>
                                                         <li className="cl-ash">
-                                                            <img src="assets/img/pant/2/3.jpg" alt="img" />
+                                                            <Image height={200} width={200} src="/assets/img/pant/2/3.jpg" alt="img" />
                                                         </li>
                                                         <li className="cl-navy">
-                                                            <img src="assets/img/pant/2/5.jpg" alt="img" />
+                                                            <Image height={200} width={200} src="/assets/img/pant/2/5.jpg" alt="img" />
                                                         </li>
                                                     </ul>
                                                 </div>
                                             </div>
                                             <div className="single-product">
                                                 <div className="product-image pos-rel">
-                                                    <a href="shop-details.html" className=""><img src="assets/img/shoe/1.jpg" alt="img" /></a>
+                                                    <a href="shop-details.html" className=""><Image height={200} width={200} src="/assets/img/shoe/1.jpg" alt="img" /></a>
                                                     <div className="product-action">
                                                         <a href="#" className="quick-view-btn"><i className="fal fa-eye"></i></a>
                                                         <a href="#" className="wishlist-btn"><i className="fal fa-heart"></i></a>
@@ -1269,8 +1258,8 @@ const Home = () => {
                                             </div>
                                             <div className="single-product">
                                                 <div className="product-image pos-rel">
-                                                    <a href="shop-details.html" className=""><img
-                                                        src="assets/img/product/800_1034/Image-4-1.jpg" alt="img" /></a>
+                                                    <a href="shop-details.html" className=""><Image height={200} width={200}
+                                                        src="/assets/img/product/800_1034/Image-4-1.jpg" alt="img" /></a>
                                                     <div className="product-action">
                                                         <a href="#" className="quick-view-btn"><i className="fal fa-eye"></i></a>
                                                         <a href="#" className="wishlist-btn"><i className="fal fa-heart"></i></a>
@@ -1290,8 +1279,8 @@ const Home = () => {
                                             </div>
                                             <div className="single-product">
                                                 <div className="product-image pos-rel">
-                                                    <a href="shop-details.html" className=""><img
-                                                        src="assets/img/product/800_1034/Image-16-1.jpg" alt="img" /></a>
+                                                    <a href="shop-details.html" className=""><Image height={200} width={200}
+                                                        src="/assets/img/product/800_1034/Image-16-1.jpg" alt="img" /></a>
                                                     <div className="product-action">
                                                         <a href="#" className="quick-view-btn"><i className="fal fa-eye"></i></a>
                                                         <a href="#" className="wishlist-btn"><i className="fal fa-heart"></i></a>
@@ -1315,7 +1304,7 @@ const Home = () => {
                                             </div>
                                             <div className="single-product">
                                                 <div className="product-image pos-rel">
-                                                    <a href="shop-details.html" className=""><img src="assets/img/product/product-img1.jpg"
+                                                    <a href="shop-details.html" className=""><Image height={200} width={200} src="/assets/img/product/product-img1.jpg"
                                                         alt="img" /></a>
                                                     <div className="product-action">
                                                         <a href="#" className="quick-view-btn"><i className="fal fa-eye"></i></a>
@@ -1337,7 +1326,7 @@ const Home = () => {
                                             </div>
                                             <div className="single-product">
                                                 <div className="product-image pos-rel">
-                                                    <a href="shop-details.html" className=""><img src="assets/img/sunglass/2.jpg"
+                                                    <a href="shop-details.html" className=""><Image height={200} width={200} src="/assets/img/sunglass/2.jpg"
                                                         alt="img" /></a>
                                                     <div className="product-action">
                                                         <a href="#" className="quick-view-btn"><i className="fal fa-eye"></i></a>
@@ -1357,26 +1346,26 @@ const Home = () => {
                                                     </div>
                                                     <ul className="product-color-nav">
                                                         <li className="cl-black active">
-                                                            <img src="assets/img/sunglass/2.jpg" alt="img" />
+                                                            <Image height={200} width={200} src="/assets/img/sunglass/2.jpg" alt="img" />
                                                         </li>
                                                         <li className="cl-ash">
-                                                            <img src="assets/img/sunglass/5.jpg" alt="img" />
+                                                            <Image height={200} width={200} src="/assets/img/sunglass/5.jpg" alt="img" />
                                                         </li>
                                                         <li className="cl-brown">
-                                                            <img src="assets/img/sunglass/8.jpg" alt="img" />
+                                                            <Image height={200} width={200} src="/assets/img/sunglass/8.jpg" alt="img" />
                                                         </li>
                                                         <li className="cl-navy">
-                                                            <img src="assets/img/sunglass/11.jpg" alt="img" />
+                                                            <Image height={200} width={200} src="/assets/img/sunglass/11.jpg" alt="img" />
                                                         </li>
                                                         <li className="cl-wood">
-                                                            <img src="assets/img/sunglass/14.jpg" alt="img" />
+                                                            <Image height={200} width={200} src="/assets/img/sunglass/14.jpg" alt="img" />
                                                         </li>
                                                     </ul>
                                                 </div>
                                             </div>
                                             <div className="single-product">
                                                 <div className="product-image pos-rel">
-                                                    <a href="shop-details.html" className=""><img src="assets/img/shirt/2/1.jpg" alt="img" /></a>
+                                                    <a href="shop-details.html" className=""><Image height={200} width={200} src="/assets/img/shirt/2/1.jpg" alt="img" /></a>
                                                     <div className="product-action">
                                                         <a href="#" className="quick-view-btn"><i className="fal fa-eye"></i></a>
                                                         <a href="#" className="wishlist-btn"><i className="fal fa-heart"></i></a>
@@ -1395,21 +1384,21 @@ const Home = () => {
                                                     </div>
                                                     <ul className="product-color-nav">
                                                         <li className="cl-brown active">
-                                                            <img src="assets/img/shirt/2/1.jpg" alt="img" />
+                                                            <Image height={200} width={200} src="/assets/img/shirt/2/1.jpg" alt="img" />
                                                         </li>
                                                         <li className="cl-navy">
-                                                            <img src="assets/img/shirt/2/4.jpg" alt="img" />
+                                                            <Image height={200} width={200} src="/assets/img/shirt/2/4.jpg" alt="img" />
                                                         </li>
                                                         <li className="cl-ash">
-                                                            <img src="assets/img/shirt/2/7.jpg" alt="img" />
+                                                            <Image height={200} width={200} src="/assets/img/shirt/2/7.jpg" alt="img" />
                                                         </li>
                                                     </ul>
                                                 </div>
                                             </div>
                                             <div className="single-product">
                                                 <div className="product-image pos-rel">
-                                                    <a href="shop-details.html" className=""><img
-                                                        src="assets/img/product/800_1034/Image-5-1.jpg" alt="img" /></a>
+                                                    <a href="shop-details.html" className=""><Image height={200} width={200}
+                                                        src="/assets/img/product/800_1034/Image-5-1.jpg" alt="img" /></a>
                                                     <div className="product-action">
                                                         <a href="#" className="quick-view-btn"><i className="fal fa-eye"></i></a>
                                                         <a href="#" className="wishlist-btn"><i className="fal fa-heart"></i></a>
@@ -1429,8 +1418,8 @@ const Home = () => {
                                             </div>
                                             <div className="single-product">
                                                 <div className="product-image pos-rel">
-                                                    <a href="shop-details.html" className=""><img
-                                                        src="assets/img/product/800_1034/Image-1-1.jpg" alt="img" /></a>
+                                                    <a href="shop-details.html" className=""><Image height={200} width={200}
+                                                        src="/assets/img/product/800_1034/Image-1-1.jpg" alt="img" /></a>
                                                     <div className="product-action">
                                                         <a href="#" className="quick-view-btn"><i className="fal fa-eye"></i></a>
                                                         <a href="#" className="wishlist-btn"><i className="fal fa-heart"></i></a>
@@ -1451,10 +1440,10 @@ const Home = () => {
                                                     </div>
                                                     <ul className="product-color-nav">
                                                         <li className="cl-ash active">
-                                                            <img src="assets/img/product/800_1034/Image-1-1.jpg" alt="img" />
+                                                            <Image height={200} width={200} src="/assets/img/product/800_1034/Image-1-1.jpg" alt="img" />
                                                         </li>
                                                         <li className="cl-light-white">
-                                                            <img src="assets/img/product/800_1034/Image-1-2.jpg" alt="img" />
+                                                            <Image height={200} width={200} src="/assets/img/product/800_1034/Image-1-2.jpg" alt="img" />
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -1466,7 +1455,7 @@ const Home = () => {
 
                                             <div className="single-product">
                                                 <div className="product-image pos-rel">
-                                                    <a href="shop-details.html" className=""><img src="assets/img/pant/2/1.jpg" alt="img" /></a>
+                                                    <a href="shop-details.html" className=""><Image height={200} width={200} src="/assets/img/pant/2/1.jpg" alt="img" /></a>
                                                     <div className="product-action">
                                                         <a href="#" className="quick-view-btn"><i className="fal fa-eye"></i></a>/
                                                         <a href="#" className="wishlist-btn"><i className="fal fa-heart"></i></a>
@@ -1488,20 +1477,20 @@ const Home = () => {
                                                     </div>
                                                     <ul className="product-color-nav">
                                                         <li className="cl-brown active">
-                                                            <img src="assets/img/pant/2/1.jpg" alt="img" />
+                                                            <Image height={200} width={200} src="/assets/img/pant/2/1.jpg" alt="img" />
                                                         </li>
                                                         <li className="cl-ash">
-                                                            <img src="assets/img/pant/2/3.jpg" alt="img" />
+                                                            <Image height={200} width={200} src="/assets/img/pant/2/3.jpg" alt="img" />
                                                         </li>
                                                         <li className="cl-navy">
-                                                            <img src="assets/img/pant/2/5.jpg" alt="img" />
+                                                            <Image height={200} width={200} src="/assets/img/pant/2/5.jpg" alt="img" />
                                                         </li>
                                                     </ul>
                                                 </div>
                                             </div>
                                             <div className="single-product">
                                                 <div className="product-image pos-rel">
-                                                    <a href="shop-details.html" className=""><img src="assets/img/shoe/1.jpg" alt="img" /></a>
+                                                    <a href="shop-details.html" className=""><Image height={200} width={200} src="/assets/img/shoe/1.jpg" alt="img" /></a>
                                                     <div className="product-action">
                                                         <a href="#" className="quick-view-btn"><i className="fal fa-eye"></i></a>
                                                         <a href="#" className="wishlist-btn"><i className="fal fa-heart"></i></a>
@@ -1522,7 +1511,7 @@ const Home = () => {
                                             </div>
                                             <div className="single-product">
                                                 <div className="product-image pos-rel">
-                                                    <a href="shop-details.html" className=""><img src="assets/img/shirt/3/1.jpg" alt="img" /></a>
+                                                    <a href="shop-details.html" className=""><Image height={200} width={200} src="/assets/img/shirt/3/1.jpg" alt="img" /></a>
                                                     <div className="product-action">
                                                         <a href="#" className="quick-view-btn"><i className="fal fa-eye"></i></a>
                                                         <a href="#" className="wishlist-btn"><i className="fal fa-heart"></i></a>
@@ -1541,23 +1530,23 @@ const Home = () => {
                                                     </div>
                                                     <ul className="product-color-nav">
                                                         <li className="cl-yellow active">
-                                                            <img src="assets/img/shirt/3/1.jpg" alt="img" />
+                                                            <Image height={200} width={200} src="/assets/img/shirt/3/1.jpg" alt="img" />
                                                         </li>
                                                         <li className="cl-black">
-                                                            <img src="assets/img/shirt/3/2.jpg" alt="img" />
+                                                            <Image height={200} width={200} src="/assets/img/shirt/3/2.jpg" alt="img" />
                                                         </li>
                                                         <li className="cl-navy">
-                                                            <img src="assets/img/shirt/3/3.jpg" alt="img" />
+                                                            <Image height={200} width={200} src="/assets/img/shirt/3/3.jpg" alt="img" />
                                                         </li>
                                                         <li className="cl-orange">
-                                                            <img src="assets/img/shirt/3/4.jpg" alt="img" />
+                                                            <Image height={200} width={200} src="/assets/img/shirt/3/4.jpg" alt="img" />
                                                         </li>
                                                     </ul>
                                                 </div>
                                             </div>
                                             <div className="single-product">
                                                 <div className="product-image pos-rel">
-                                                    <a href="shop-details.html" className=""><img src="assets/img/bag/1.jpg" alt="img" /></a>
+                                                    <a href="shop-details.html" className=""><Image height={200} width={200} src="/assets/img/bag/1.jpg" alt="img" /></a>
                                                     <div className="product-action">
                                                         <a href="#" className="quick-view-btn"><i className="fal fa-eye"></i></a>
                                                         <a href="#" className="wishlist-btn"><i className="fal fa-heart"></i></a>
@@ -1578,21 +1567,21 @@ const Home = () => {
                                                     </div>
                                                     <ul className="product-color-nav">
                                                         <li className="cl-brown active">
-                                                            <img src="assets/img/bag/1.jpg" alt="img" />
+                                                            <Image height={200} width={200} src="/assets/img/bag/1.jpg" alt="img" />
                                                         </li>
                                                         <li className="cl-ash">
-                                                            <img src="assets/img/bag/2.jpg" alt="img" />
+                                                            <Image height={200} width={200} src="/assets/img/bag/2.jpg" alt="img" />
                                                         </li>
                                                         <li className="cl-black">
-                                                            <img src="assets/img/bag/3.jpg" alt="img" />
+                                                            <Image height={200} width={200} src="/assets/img/bag/3.jpg" alt="img" />
                                                         </li>
                                                     </ul>
                                                 </div>
                                             </div>
                                             <div className="single-product">
                                                 <div className="product-image pos-rel">
-                                                    <a href="shop-details.html" className=""><img
-                                                        src="assets/img/product/800_1034/Image-2-1.jpg" alt="img" /></a>
+                                                    <a href="shop-details.html" className=""><Image height={200} width={200}
+                                                        src="/assets/img/product/800_1034/Image-2-1.jpg" alt="img" /></a>
                                                     <div className="product-action">
                                                         <a href="#" className="quick-view-btn"><i className="fal fa-eye"></i></a>
                                                         <a href="#" className="wishlist-btn"><i className="fal fa-heart"></i></a>
@@ -1613,7 +1602,7 @@ const Home = () => {
                                             </div>
                                             <div className="single-product">
                                                 <div className="product-image pos-rel">
-                                                    <a href="shop-details.html" className=""><img src="assets/img/shirt/1/1.jpg" alt="img" /></a>
+                                                    <a href="shop-details.html" className=""><Image height={200} width={200} src="/assets/img/shirt/1/1.jpg" alt="img" /></a>
                                                     <div className="product-action">
                                                         <a href="#" className="quick-view-btn"><i className="fal fa-eye"></i></a>
                                                         <a href="#" className="wishlist-btn"><i className="fal fa-heart"></i></a>
@@ -1634,23 +1623,23 @@ const Home = () => {
                                                     </div>
                                                     <ul className="product-color-nav">
                                                         <li className="cl-pink active">
-                                                            <img src="assets/img/shirt/1/1.jpg" alt="img" />
+                                                            <Image height={200} width={200} src="/assets/img/shirt/1/1.jpg" alt="img" />
                                                         </li>
                                                         <li className="cl-light-white">
-                                                            <img src="assets/img/shirt/1/3.jpg" alt="img" />
+                                                            <Image height={200} width={200} src="/assets/img/shirt/1/3.jpg" alt="img" />
                                                         </li>
                                                         <li className="cl-black">
-                                                            <img src="assets/img/shirt/1/5.jpg" alt="img" />
+                                                            <Image height={200} width={200} src="/assets/img/shirt/1/5.jpg" alt="img" />
                                                         </li>
                                                         <li className="cl-navy">
-                                                            <img src="assets/img/shirt/1/7.jpg" alt="img" />
+                                                            <Image height={200} width={200} src="/assets/img/shirt/1/7.jpg" alt="img" />
                                                         </li>
                                                     </ul>
                                                 </div>
                                             </div>
                                             <div className="single-product">
                                                 <div className="product-image pos-rel">
-                                                    <a href="shop-details.html" className=""><img src="assets/img/pant/1/1.jpg" alt="img" /></a>
+                                                    <a href="shop-details.html" className=""><Image height={200} width={200} src="/assets/img/pant/1/1.jpg" alt="img" /></a>
                                                     <div className="product-action">
                                                         <a href="#" className="quick-view-btn"><i className="fal fa-eye"></i></a>
                                                         <a href="#" className="wishlist-btn"><i className="fal fa-heart"></i></a>
@@ -1669,18 +1658,18 @@ const Home = () => {
                                                     </div>
                                                     <ul className="product-color-nav">
                                                         <li className="cl-navy active">
-                                                            <img src="assets/img/pant/1/1.jpg" alt="img" />
+                                                            <Image height={200} width={200} src="/assets/img/pant/1/1.jpg" alt="img" />
                                                         </li>
                                                         <li className="cl-light-white">
-                                                            <img src="assets/img/pant/1/4.jpg" alt="img" />
+                                                            <Image height={200} width={200} src="/assets/img/pant/1/4.jpg" alt="img" />
                                                         </li>
                                                     </ul>
                                                 </div>
                                             </div>
                                             <div className="single-product">
                                                 <div className="product-image pos-rel">
-                                                    <a href="shop-details.html" className=""><img
-                                                        src="assets/img/product/800_1034/Image-3-1.jpg" alt="img" /></a>
+                                                    <a href="shop-details.html" className=""><Image height={200} width={200}
+                                                        src="/assets/img/product/800_1034/Image-3-1.jpg" alt="img" /></a>
                                                     <div className="product-action">
                                                         <a href="#" className="quick-view-btn"><i className="fal fa-eye"></i></a>
                                                         <a href="#" className="wishlist-btn"><i className="fal fa-heart"></i></a>
@@ -1705,8 +1694,8 @@ const Home = () => {
                                             </div>
                                             <div className="single-product">
                                                 <div className="product-image pos-rel">
-                                                    <a href="shop-details.html" className=""><img
-                                                        src="assets/img/product/800_1034/Image-4-1.jpg" alt="img" /></a>
+                                                    <a href="shop-details.html" className=""><Image height={200} width={200}
+                                                        src="/assets/img/product/800_1034/Image-4-1.jpg" alt="img" /></a>
                                                     <div className="product-action">
                                                         <a href="#" className="quick-view-btn"><i className="fal fa-eye"></i></a>
                                                         <a href="#" className="wishlist-btn"><i className="fal fa-heart"></i></a>
@@ -1726,8 +1715,8 @@ const Home = () => {
                                             </div>
                                             <div className="single-product">
                                                 <div className="product-image pos-rel">
-                                                    <a href="shop-details.html" className=""><img
-                                                        src="assets/img/product/800_1034/Image-16-1.jpg" alt="img" /></a>
+                                                    <a href="shop-details.html" className=""><Image height={200} width={200}
+                                                        src="/assets/img/product/800_1034/Image-16-1.jpg" alt="img" /></a>
                                                     <div className="product-action">
                                                         <a href="#" className="quick-view-btn"><i className="fal fa-eye"></i></a>
                                                         <a href="#" className="wishlist-btn"><i className="fal fa-heart"></i></a>
@@ -1751,7 +1740,7 @@ const Home = () => {
                                             </div>
                                             <div className="single-product">
                                                 <div className="product-image pos-rel">
-                                                    <a href="shop-details.html" className=""><img src="assets/img/product/product-img1.jpg"
+                                                    <a href="shop-details.html" className=""><Image height={200} width={200} src="/assets/img/product/product-img1.jpg"
                                                         alt="img" /></a>
                                                     <div className="product-action">
                                                         <a href="#" className="quick-view-btn"><i className="fal fa-eye"></i></a>
@@ -1773,7 +1762,7 @@ const Home = () => {
                                             </div>
                                             <div className="single-product">
                                                 <div className="product-image pos-rel">
-                                                    <a href="shop-details.html" className=""><img src="assets/img/sunglass/2.jpg"
+                                                    <a href="shop-details.html" className=""><Image height={200} width={200} src="/assets/img/sunglass/2.jpg"
                                                         alt="img" /></a>
                                                     <div className="product-action">
                                                         <a href="#" className="quick-view-btn"><i className="fal fa-eye"></i></a>
@@ -1793,26 +1782,26 @@ const Home = () => {
                                                     </div>
                                                     <ul className="product-color-nav">
                                                         <li className="cl-black active">
-                                                            <img src="assets/img/sunglass/2.jpg" alt="img" />
+                                                            <Image height={200} width={200} src="/assets/img/sunglass/2.jpg" alt="img" />
                                                         </li>
                                                         <li className="cl-ash">
-                                                            <img src="assets/img/sunglass/5.jpg" alt="img" />
+                                                            <Image height={200} width={200} src="/assets/img/sunglass/5.jpg" alt="img" />
                                                         </li>
                                                         <li className="cl-brown">
-                                                            <img src="assets/img/sunglass/8.jpg" alt="img" />
+                                                            <Image height={200} width={200} src="/assets/img/sunglass/8.jpg" alt="img" />
                                                         </li>
                                                         <li className="cl-navy">
-                                                            <img src="assets/img/sunglass/11.jpg" alt="img" />
+                                                            <Image height={200} width={200} src="/assets/img/sunglass/11.jpg" alt="img" />
                                                         </li>
                                                         <li className="cl-wood">
-                                                            <img src="assets/img/sunglass/14.jpg" alt="img" />
+                                                            <Image height={200} width={200} src="/assets/img/sunglass/14.jpg" alt="img" />
                                                         </li>
                                                     </ul>
                                                 </div>
                                             </div>
                                             <div className="single-product">
                                                 <div className="product-image pos-rel">
-                                                    <a href="shop-details.html" className=""><img src="assets/img/shirt/2/1.jpg" alt="img" /></a>
+                                                    <a href="shop-details.html" className=""><Image height={200} width={200} src="/assets/img/shirt/2/1.jpg" alt="img" /></a>
                                                     <div className="product-action">
                                                         <a href="#" className="quick-view-btn"><i className="fal fa-eye"></i></a>
                                                         <a href="#" className="wishlist-btn"><i className="fal fa-heart"></i></a>
@@ -1831,21 +1820,21 @@ const Home = () => {
                                                     </div>
                                                     <ul className="product-color-nav">
                                                         <li className="cl-brown active">
-                                                            <img src="assets/img/shirt/2/1.jpg" alt="img" />
+                                                            <Image height={200} width={200} src="/assets/img/shirt/2/1.jpg" alt="img" />
                                                         </li>
                                                         <li className="cl-navy">
-                                                            <img src="assets/img/shirt/2/4.jpg" alt="img" />
+                                                            <Image height={200} width={200} src="/assets/img/shirt/2/4.jpg" alt="img" />
                                                         </li>
                                                         <li className="cl-ash">
-                                                            <img src="assets/img/shirt/2/7.jpg" alt="img" />
+                                                            <Image height={200} width={200} src="/assets/img/shirt/2/7.jpg" alt="img" />
                                                         </li>
                                                     </ul>
                                                 </div>
                                             </div>
                                             <div className="single-product">
                                                 <div className="product-image pos-rel">
-                                                    <a href="shop-details.html" className=""><img
-                                                        src="assets/img/product/800_1034/Image-5-1.jpg" alt="img" /></a>
+                                                    <a href="shop-details.html" className=""><Image height={200} width={200}
+                                                        src="/assets/img/product/800_1034/Image-5-1.jpg" alt="img" /></a>
                                                     <div className="product-action">
                                                         <a href="#" className="quick-view-btn"><i className="fal fa-eye"></i></a>
                                                         <a href="#" className="wishlist-btn"><i className="fal fa-heart"></i></a>
@@ -1865,8 +1854,8 @@ const Home = () => {
                                             </div>
                                             <div className="single-product">
                                                 <div className="product-image pos-rel">
-                                                    <a href="shop-details.html" className=""><img
-                                                        src="assets/img/product/800_1034/Image-1-1.jpg" alt="img" /></a>
+                                                    <a href="shop-details.html" className=""><Image height={200} width={200}
+                                                        src="/assets/img/product/800_1034/Image-1-1.jpg" alt="img" /></a>
                                                     <div className="product-action">
                                                         <a href="#" className="quick-view-btn"><i className="fal fa-eye"></i></a>
                                                         <a href="#" className="wishlist-btn"><i className="fal fa-heart"></i></a>
@@ -1887,10 +1876,10 @@ const Home = () => {
                                                     </div>
                                                     <ul className="product-color-nav">
                                                         <li className="cl-ash active">/
-                                                            <img src="assets/img/product/800_1034/Image-1-1.jpg" alt="img" />
+                                                            <Image height={200} width={200} src="/assets/img/product/800_1034/Image-1-1.jpg" alt="img" />
                                                         </li>
                                                         <li className="cl-light-white">
-                                                            <img src="assets/img/product/800_1034/Image-1-2.jpg" alt="img" />
+                                                            <Image height={200} width={200} src="/assets/img/product/800_1034/Image-1-2.jpg" alt="img" />
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -1902,8 +1891,8 @@ const Home = () => {
 
                                             <div className="single-product">
                                                 <div className="product-image pos-rel">
-                                                    <a href="shop-details.html" className=""><img
-                                                        src="assets/img/product/800_1034/Image-2-1.jpg" alt="img" /></a>
+                                                    <a href="shop-details.html" className=""><Image height={200} width={200}
+                                                        src="/assets/img/product/800_1034/Image-2-1.jpg" alt="img" /></a>
                                                     <div className="product-action">
                                                         <a href="#" className="quick-view-btn"><i className="fal fa-eye"></i></a>
                                                         <a href="#" className="wishlist-btn"><i className="fal fa-heart"></i></a>
@@ -1924,8 +1913,8 @@ const Home = () => {
                                             </div>
                                             <div className="single-product">
                                                 <div className="product-image pos-rel">
-                                                    <a href="shop-details.html" className=""><img
-                                                        src="assets/img/product/800_1034/Image-3-1.jpg" alt="img" /></a>
+                                                    <a href="shop-details.html" className=""><Image height={200} width={200}
+                                                        src="/assets/img/product/800_1034/Image-3-1.jpg" alt="img" /></a>
                                                     <div className="product-action">
                                                         <a href="#" className="quick-view-btn"><i className="fal fa-eye"></i></a>
                                                         <a href="#" className="wishlist-btn"><i className="fal fa-heart"></i></a>
@@ -1950,8 +1939,8 @@ const Home = () => {
                                             </div>
                                             <div className="single-product">
                                                 <div className="product-image pos-rel">
-                                                    <a href="shop-details.html" className=""><img
-                                                        src="assets/img/product/800_1034/Image-4-1.jpg" alt="img" /></a>
+                                                    <a href="shop-details.html" className=""><Image height={200} width={200}
+                                                        src="/assets/img/product/800_1034/Image-4-1.jpg" alt="img" /></a>
                                                     <div className="product-action">
                                                         <a href="#" className="quick-view-btn"><i className="fal fa-eye"></i></a>
                                                         <a href="#" className="wishlist-btn"><i className="fal fa-heart"></i></a>
@@ -1971,8 +1960,8 @@ const Home = () => {
                                             </div>
                                             <div className="single-product">
                                                 <div className="product-image pos-rel">
-                                                    <a href="shop-details.html" className=""><img
-                                                        src="assets/img/product/800_1034/Image-16-1.jpg" alt="img" /></a>
+                                                    <a href="shop-details.html" className=""><Image height={200} width={200}
+                                                        src="/assets/img/product/800_1034/Image-16-1.jpg" alt="img" /></a>
                                                     <div className="product-action">
                                                         <a href="#" className="quick-view-btn"><i className="fal fa-eye"></i></a>
                                                         <a href="#" className="wishlist-btn"><i className="fal fa-heart"></i></a>
@@ -1996,7 +1985,7 @@ const Home = () => {
                                             </div>
                                             <div className="single-product">
                                                 <div className="product-image pos-rel">
-                                                    <a href="shop-details.html" className=""><img src="assets/img/shirt/1/1.jpg" alt="img" /></a>
+                                                    <a href="shop-details.html" className=""><Image height={200} width={200} src="/assets/img/shirt/1/1.jpg" alt="img" /></a>
                                                     <div className="product-action">
                                                         <a href="#" className="quick-view-btn"><i className="fal fa-eye"></i></a>
                                                         <a href="#" className="wishlist-btn"><i className="fal fa-heart"></i></a>
@@ -2017,23 +2006,23 @@ const Home = () => {
                                                     </div>
                                                     <ul className="product-color-nav">
                                                         <li className="cl-pink active">
-                                                            <img src="assets/img/shirt/1/1.jpg" alt="img" />
+                                                            <Image height={200} width={200} src="/assets/img/shirt/1/1.jpg" alt="img" />
                                                         </li>
                                                         <li className="cl-light-white">
-                                                            <img src="assets/img/shirt/1/3.jpg" alt="img" />
+                                                            <Image height={200} width={200} src="/assets/img/shirt/1/3.jpg" alt="img" />
                                                         </li>
                                                         <li className="cl-black">
-                                                            <img src="assets/img/shirt/1/5.jpg" alt="img" />
+                                                            <Image height={200} width={200} src="/assets/img/shirt/1/5.jpg" alt="img" />
                                                         </li>
                                                         <li className="cl-navy">
-                                                            <img src="assets/img/shirt/1/7.jpg" alt="img" />
+                                                            <Image height={200} width={200} src="/assets/img/shirt/1/7.jpg" alt="img" />
                                                         </li>
                                                     </ul>
                                                 </div>
                                             </div>
                                             <div className="single-product">
                                                 <div className="product-image pos-rel">
-                                                    <a href="shop-details.html" className=""><img src="assets/img/pant/1/1.jpg" alt="img" /></a>
+                                                    <a href="shop-details.html" className=""><Image height={200} width={200} src="/assets/img/pant/1/1.jpg" alt="img" /></a>
                                                     <div className="product-action">
                                                         <a href="#" className="quick-view-btn"><i className="fal fa-eye"></i></a>
                                                         <a href="#" className="wishlist-btn"><i className="fal fa-heart"></i></a>
@@ -2052,17 +2041,17 @@ const Home = () => {
                                                     </div>
                                                     <ul className="product-color-nav">
                                                         <li className="cl-navy active">
-                                                            <img src="assets/img/pant/1/1.jpg" alt="img" />
+                                                            <Image height={200} width={200} src="/assets/img/pant/1/1.jpg" alt="img" />
                                                         </li>
                                                         <li className="cl-light-white">
-                                                            <img src="assets/img/pant/1/4.jpg" alt="img" />
+                                                            <Image height={200} width={200} src="/assets/img/pant/1/4.jpg" alt="img" />
                                                         </li>
                                                     </ul>
                                                 </div>
                                             </div>
                                             <div className="single-product">
                                                 <div className="product-image pos-rel">
-                                                    <a href="shop-details.html" className=""><img src="assets/img/pant/2/1.jpg" alt="img" /></a>
+                                                    <a href="shop-details.html" className=""><Image height={200} width={200} src="/assets/img/pant/2/1.jpg" alt="img" /></a>
                                                     <div className="product-action">
                                                         <a href="#" className="quick-view-btn"><i className="fal fa-eye"></i></a>
                                                         <a href="#" className="wishlist-btn"><i className="fal fa-heart"></i></a>
@@ -2084,20 +2073,20 @@ const Home = () => {
                                                     </div>
                                                     <ul className="product-color-nav">
                                                         <li className="cl-brown active">
-                                                            <img src="assets/img/pant/2/1.jpg" alt="img" />
+                                                            <Image height={200} width={200} src="/assets/img/pant/2/1.jpg" alt="img" />
                                                         </li>
                                                         <li className="cl-ash">
-                                                            <img src="assets/img/pant/2/3.jpg" alt="img" />
+                                                            <Image height={200} width={200} src="/assets/img/pant/2/3.jpg" alt="img" />
                                                         </li>
                                                         <li className="cl-navy">
-                                                            <img src="assets/img/pant/2/5.jpg" alt="img" />
+                                                            <Image height={200} width={200} src="/assets/img/pant/2/5.jpg" alt="img" />
                                                         </li>
                                                     </ul>
                                                 </div>
                                             </div>
                                             <div className="single-product">
                                                 <div className="product-image pos-rel">
-                                                    <a href="shop-details.html" className=""><img src="assets/img/shoe/1.jpg" alt="img" /></a>
+                                                    <a href="shop-details.html" className=""><Image height={200} width={200} src="/assets/img/shoe/1.jpg" alt="img" /></a>
                                                     <div className="product-action">
                                                         <a href="#" className="quick-view-btn"><i className="fal fa-eye"></i></a>
                                                         <a href="#" className="wishlist-btn"><i className="fal fa-heart"></i></a>
@@ -2118,7 +2107,7 @@ const Home = () => {
                                             </div>
                                             <div className="single-product">
                                                 <div className="product-image pos-rel">
-                                                    <a href="shop-details.html" className=""><img src="assets/img/shirt/3/1.jpg" alt="img" /></a>
+                                                    <a href="shop-details.html" className=""><Image height={200} width={200} src="/assets/img/shirt/3/1.jpg" alt="img" /></a>
                                                     <div className="product-action">
                                                         <a href="#" className="quick-view-btn"><i className="fal fa-eye"></i></a>
                                                         <a href="#" className="wishlist-btn"><i className="fal fa-heart"></i></a>
@@ -2137,23 +2126,23 @@ const Home = () => {
                                                     </div>
                                                     <ul className="product-color-nav">
                                                         <li className="cl-yellow active">
-                                                            <img src="assets/img/shirt/3/1.jpg" alt="img" />
+                                                            <Image height={200} width={200} src="/assets/img/shirt/3/1.jpg" alt="img" />
                                                         </li>
                                                         <li className="cl-black">
-                                                            <img src="assets/img/shirt/3/2.jpg" alt="img" />
+                                                            <Image height={200} width={200} src="/assets/img/shirt/3/2.jpg" alt="img" />
                                                         </li>
                                                         <li className="cl-navy">
-                                                            <img src="assets/img/shirt/3/3.jpg" alt="img" />
+                                                            <Image height={200} width={200} src="/assets/img/shirt/3/3.jpg" alt="img" />
                                                         </li>
                                                         <li className="cl-orange">
-                                                            <img src="assets/img/shirt/3/4.jpg" alt="img" />
+                                                            <Image height={200} width={200} src="/assets/img/shirt/3/4.jpg" alt="img" />
                                                         </li>
                                                     </ul>
                                                 </div>
                                             </div>
                                             <div className="single-product">
                                                 <div className="product-image pos-rel">
-                                                    <a href="shop-details.html" className=""><img src="assets/img/bag/1.jpg" alt="img" /></a>
+                                                    <a href="shop-details.html" className=""><Image height={200} width={200} src="/assets/img/bag/1.jpg" alt="img" /></a>
                                                     <div className="product-action">
                                                         <a href="#" className="quick-view-btn"><i className="fal fa-eye"></i></a>
                                                         <a href="#" className="wishlist-btn"><i className="fal fa-heart"></i></a>
@@ -2174,20 +2163,20 @@ const Home = () => {
                                                     </div>
                                                     <ul className="product-color-nav">
                                                         <li className="cl-brown active">
-                                                            <img src="assets/img/bag/1.jpg" alt="img" />
+                                                            <Image height={200} width={200} src="/assets/img/bag/1.jpg" alt="img" />
                                                         </li>
                                                         <li className="cl-ash">
-                                                            <img src="assets/img/bag/2.jpg" alt="img" />
+                                                            <Image height={200} width={200} src="/assets/img/bag/2.jpg" alt="img" />
                                                         </li>
                                                         <li className="cl-black">
-                                                            <img src="assets/img/bag/3.jpg" alt="img" />
+                                                            <Image height={200} width={200} src="/assets/img/bag/3.jpg" alt="img" />
                                                         </li>
                                                     </ul>
                                                 </div>
                                             </div>
                                             <div className="single-product">
                                                 <div className="product-image pos-rel">
-                                                    <a href="shop-details.html" className=""><img src="assets/img/product/product-img1.jpg"
+                                                    <a href="shop-details.html" className=""><Image height={200} width={200} src="/assets/img/product/product-img1.jpg"
                                                         alt="img" /></a>
                                                     <div className="product-action">
                                                         <a href="#" className="quick-view-btn"><i className="fal fa-eye"></i></a>
@@ -2209,7 +2198,7 @@ const Home = () => {
                                             </div>
                                             <div className="single-product">
                                                 <div className="product-image pos-rel">
-                                                    <a href="shop-details.html" className=""><img src="assets/img/sunglass/2.jpg"
+                                                    <a href="shop-details.html" className=""><Image height={200} width={200} src="/assets/img/sunglass/2.jpg"
                                                         alt="img" /></a>
                                                     <div className="product-action">
                                                         <a href="#" className="quick-view-btn"><i className="fal fa-eye"></i></a>
@@ -2229,26 +2218,26 @@ const Home = () => {
                                                     </div>
                                                     <ul className="product-color-nav">
                                                         <li className="cl-black active">
-                                                            <img src="assets/img/sunglass/2.jpg" alt="img" />
+                                                            <Image height={200} width={200} src="/assets/img/sunglass/2.jpg" alt="img" />
                                                         </li>
                                                         <li className="cl-ash">
-                                                            <img src="assets/img/sunglass/5.jpg" alt="img" />
+                                                            <Image height={200} width={200} src="/assets/img/sunglass/5.jpg" alt="img" />
                                                         </li>
                                                         <li className="cl-brown">
-                                                            <img src="assets/img/sunglass/8.jpg" alt="img" />
+                                                            <Image height={200} width={200} src="/assets/img/sunglass/8.jpg" alt="img" />
                                                         </li>
                                                         <li className="cl-navy">
-                                                            <img src="assets/img/sunglass/11.jpg" alt="img" />
+                                                            <Image height={200} width={200} src="/assets/img/sunglass/11.jpg" alt="img" />
                                                         </li>
                                                         <li className="cl-wood">
-                                                            <img src="assets/img/sunglass/14.jpg" alt="img" />
+                                                            <Image height={200} width={200} src="/assets/img/sunglass/14.jpg" alt="img" />
                                                         </li>
                                                     </ul>
                                                 </div>
                                             </div>
                                             <div className="single-product">
                                                 <div className="product-image pos-rel">
-                                                    <a href="shop-details.html" className=""><img src="assets/img/shirt/2/1.jpg" alt="img" /></a>
+                                                    <a href="shop-details.html" className=""><Image height={200} width={200} src="/assets/img/shirt/2/1.jpg" alt="img" /></a>
                                                     <div className="product-action">
                                                         <a href="#" className="quick-view-btn"><i className="fal fa-eye"></i></a>
                                                         <a href="#" className="wishlist-btn"><i className="fal fa-heart"></i></a>
@@ -2267,21 +2256,21 @@ const Home = () => {
                                                     </div>
                                                     <ul className="product-color-nav">
                                                         <li className="cl-brown active">
-                                                            <img src="assets/img/shirt/2/1.jpg" alt="img" />
+                                                            <Image height={200} width={200} src="/assets/img/shirt/2/1.jpg" alt="img" />
                                                         </li>
                                                         <li className="cl-navy">
-                                                            <img src="assets/img/shirt/2/4.jpg" alt="img" />
+                                                            <Image height={200} width={200} src="/assets/img/shirt/2/4.jpg" alt="img" />
                                                         </li>
                                                         <li className="cl-ash">
-                                                            <img src="assets/img/shirt/2/7.jpg" alt="img" />
+                                                            <Image height={200} width={200} src="/assets/img/shirt/2/7.jpg" alt="img" />
                                                         </li>
                                                     </ul>
                                                 </div>
                                             </div>
                                             <div className="single-product">
                                                 <div className="product-image pos-rel">
-                                                    <a href="shop-details.html" className=""><img
-                                                        src="assets/img/product/800_1034/Image-5-1.jpg" alt="img" /></a>
+                                                    <a href="shop-details.html" className=""><Image height={200} width={200}
+                                                        src="/assets/img/product/800_1034/Image-5-1.jpg" alt="img" /></a>
                                                     <div className="product-action">
                                                         <a href="#" className="quick-view-btn"><i className="fal fa-eye"></i></a>
                                                         <a href="#" className="wishlist-btn"><i className="fal fa-heart"></i></a>
@@ -2301,8 +2290,8 @@ const Home = () => {
                                             </div>
                                             <div className="single-product">
                                                 <div className="product-image pos-rel">
-                                                    <a href="shop-details.html" className=""><img
-                                                        src="assets/img/product/800_1034/Image-1-1.jpg" alt="img" /></a>
+                                                    <a href="shop-details.html" className=""><Image height={200} width={200}
+                                                        src="/assets/img/product/800_1034/Image-1-1.jpg" alt="img" /></a>
                                                     <div className="product-action">
                                                         <a href="#" className="quick-view-btn"><i className="fal fa-eye"></i></a>
                                                         <a href="#" className="wishlist-btn"><i className="fal fa-heart"></i></a>
@@ -2323,10 +2312,10 @@ const Home = () => {
                                                     </div>
                                                     <ul className="product-color-nav">
                                                         <li className="cl-ash active">
-                                                            <img src="assets/img/product/800_1034/Image-1-1.jpg" alt="img" />
+                                                            <Image height={200} width={200} src="/assets/img/product/800_1034/Image-1-1.jpg" alt="img" />
                                                         </li>
                                                         <li className="cl-light-white">
-                                                            <img src="assets/img/product/800_1034/Image-1-2.jpg" alt="img" />
+                                                            <Image height={200} width={200} src="/assets/img/product/800_1034/Image-1-2.jpg" alt="img" />
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -2365,7 +2354,7 @@ const Home = () => {
                                         <div className="col-lg-6 col-md-6">
                                             <div className="single-product mb-30 featured-product">
                                                 <div className="product-image pos-rel">
-                                                    <a href="shop-details.html" className=""><img src="assets/img/product/1.png" alt="img" /></a>
+                                                    <a href="shop-details.html" className=""><Image height={200} width={200} src="/assets/img/shorts/1.webp" alt="img" /></a>
                                                     <div className="product-action">
                                                         <a href="#" className="quick-view-btn"><i className="fal fa-eye"></i></a>
                                                         <a href="#" className="wishlist-btn"><i className="fal fa-heart"></i></a>
@@ -2374,17 +2363,17 @@ const Home = () => {
                                                     </div>
                                                 </div>
                                                 <div className="product-desc">
-                                                    <div className="product-name"><a href="shop-details.html">Ecomart Smart Watch</a></div>
+                                                    <div className="product-name"><a href="shop-details.html">Men's Flat-Front Shorts</a></div>
                                                     <div className="product-price">
                                                         <span className="price-now">£85.00</span>
                                                     </div>
                                                     <ul className="product-color-nav">
-                                                        <li className="cl-blue active">
-                                                            <img src="assets/img/product/1.png" alt="img" />
+                                                        {/* <li className="cl-blue active">
+                                                            <Image height={200} width={200} src="/assets/img/product/1.png" alt="img" />
                                                         </li>
                                                         <li className="cl-ash">
-                                                            <img src="assets/img/product/2.png" alt="img" />
-                                                        </li>
+                                                            <Image height={200} width={200} src="/assets/img/product/2.png" alt="img" />
+                                                        </li> */}
                                                     </ul>
                                                 </div>
                                             </div>
@@ -2392,7 +2381,7 @@ const Home = () => {
                                         <div className="col-lg-6 col-md-6">
                                             <div className="single-product mb-30 featured-product">
                                                 <div className="product-image pos-rel">
-                                                    <a href="shop-details.html" className=""><img src="assets/img/product/3.png" alt="img" /></a>
+                                                    <a href="shop-details.html" className=""><Image height={200} width={200} src="/assets/img/bag/1/1.webp" alt="img" /></a>
                                                     <div className="product-action">
                                                         <a href="#" className="quick-view-btn"><i className="fal fa-eye"></i></a>
                                                         <a href="#" className="wishlist-btn"><i className="fal fa-heart"></i></a>
@@ -2401,20 +2390,20 @@ const Home = () => {
                                                     </div>
                                                 </div>
                                                 <div className="product-desc">
-                                                    <div className="product-name"><a href="shop-details.html">Phoebe Bucket Crossbody</a></div>
+                                                    <div className="product-name"><a href="shop-details.html">Gucci Leather Bag</a></div>
                                                     <div className="product-price">
                                                         <span className="price-now">£85.00</span>
                                                     </div>
                                                     <ul className="product-color-nav">
-                                                        <li className="cl-brown active">
-                                                            <img src="assets/img/product/3.png" alt="img" />
+                                                        {/* <li className="cl-brown active">
+                                                            <Image height={200} width={200} src="/assets/img/product/3.png" alt="img" />
                                                         </li>
                                                         <li className="cl-black">
-                                                            <img src="assets/img/product/4.png" alt="img" />
+                                                            <Image height={200} width={200} src="/assets/img/product/4.png" alt="img" />
                                                         </li>
                                                         <li className="cl-wood">
-                                                            <img src="assets/img/product/5.png" alt="img" />
-                                                        </li>
+                                                            <Image height={200} width={200} src="/assets/img/product/5.png" alt="img" />
+                                                        </li> */}
                                                     </ul>
                                                 </div>
                                             </div>
@@ -2422,7 +2411,7 @@ const Home = () => {
                                         <div className="col-lg-6 col-md-6">
                                             <div className="single-product mb-30 featured-product">
                                                 <div className="product-image pos-rel">
-                                                    <a href="shop-details.html" className=""><img src="assets/img/product/6.png" alt="img" /></a>
+                                                    <a href="shop-details.html" className=""><Image height={200} width={200} src="/assets/img/shirt/1/3.webp" alt="img" /></a>
                                                     <div className="product-action">
                                                         <a href="#" className="quick-view-btn"><i className="fal fa-eye"></i></a>
                                                         <a href="#" className="wishlist-btn"><i className="fal fa-heart"></i></a>
@@ -2431,18 +2420,18 @@ const Home = () => {
                                                     </div>
                                                 </div>
                                                 <div className="product-desc">
-                                                    <div className="product-name"><a href="shop-details.html">Women's Trucker Hat</a>
+                                                    <div className="product-name"><a href="shop-details.html">Men's Poplin Dress Shirt</a>
                                                     </div>
                                                     <div className="product-price">
                                                         <span className="price-now">£85.00</span>
                                                     </div>/
                                                     <ul className="product-color-nav">
-                                                        <li className="cl-green active">
-                                                            <img src="assets/img/product/6.png" alt="img" />
+                                                        {/* <li className="cl-green active">
+                                                            <Image height={200} width={200} src="/assets/img/product/6.png" alt="img" />
                                                         </li>
                                                         <li className="cl-orange">
-                                                            <img src="assets/img/product/7.png" alt="img" />
-                                                        </li>
+                                                            <Image height={200} width={200} src="/assets/img/product/7.png" alt="img" />
+                                                        </li> */}
                                                     </ul>
                                                 </div>
                                             </div>
@@ -2450,7 +2439,7 @@ const Home = () => {
                                         <div className="col-lg-6 col-md-6">
                                             <div className="single-product mb-30 featured-product">
                                                 <div className="product-image pos-rel">
-                                                    <a href="shop-details.html" className=""><img src="assets/img/product/11.png"
+                                                    <a href="shop-details.html" className=""><Image height={200} width={200} src="/assets/img/bag/4.webp"
                                                         alt="img" /></a>
                                                     <div className="product-action">
                                                         <a href="#" className="quick-view-btn"><i className="fal fa-eye"></i></a>
@@ -2460,18 +2449,18 @@ const Home = () => {
                                                     </div>
                                                 </div>
                                                 <div className="product-desc">
-                                                    <div className="product-name"><a href="shop-details.html">Men's Chelsea Boot</a>
+                                                    <div className="product-name"><a href="shop-details.html">Leather Bag For Girl</a>
                                                     </div>
                                                     <div className="product-price">
                                                         <span className="price-now">£85.00</span>
                                                     </div>
                                                     <ul className="product-color-nav">
-                                                        <li className="cl-black active">
-                                                            <img src="assets/img/product/11.png" alt="img" />
+                                                        {/* <li className="cl-black active">
+                                                            <Image height={200} width={200} src="/assets/img/product/11.png" alt="img" />
                                                         </li>
                                                         <li className="cl-wood">
-                                                            <img src="assets/img/product/12.png" alt="img" />
-                                                        </li>
+                                                            <Image height={200} width={200} src="/assets/img/product/12.png" alt="img" />
+                                                        </li> */}
                                                     </ul>
                                                 </div>
                                             </div>
@@ -2481,7 +2470,7 @@ const Home = () => {
                                 <div className="col-lg-6 col-md-6 order-xxl-first">
                                     <div className="single-product mb-30 featured-product">
                                         <div className="product-image pos-rel">
-                                            <a href="shop-details.html" className=""><img src="assets/img/product/8.png" alt="img" /></a>
+                                            <a href="shop-details.html" className=""><Image height={200} width={200} src="/assets/img/shirt/2/3.webp" alt="img" /></a>
                                             <div className="product-action">
                                                 <a href="#" className="quick-view-btn"><i className="fal fa-eye"></i></a>
                                                 <a href="#" className="wishlist-btn"><i className="fal fa-heart"></i></a>
@@ -2495,15 +2484,15 @@ const Home = () => {
                                                 <span className="price-now">£85.00</span>
                                             </div>
                                             <ul className="product-color-nav">
-                                                <li className="cl-pink active">
-                                                    <img src="assets/img/product/8.png" alt="img" />
+                                                {/* <li className="cl-pink active">
+                                                    <Image height={200} width={200} src="/assets/img/product/8.png" alt="img" />
                                                 </li>
                                                 <li className="cl-ash">/
-                                                    <img src="assets/img/product/9.png" alt="img" />
+                                                    <Image height={200} width={200} src="/assets/img/product/9.png" alt="img" />
                                                 </li>
                                                 <li className="cl-navy">
-                                                    <img src="assets/img/product/10.png" alt="img" />
-                                                </li>
+                                                    <Image height={200} width={200} src="/assets/img/product/10.png" alt="img" />
+                                                </li> */}
                                             </ul>
                                         </div>
                                     </div>
@@ -2529,7 +2518,7 @@ const Home = () => {
                                 <div className="product-category-wrapper">
                                     <div className="product-category-single pos-rel">
                                         <div className="product-category-img">
-                                            <a href="shop.html"><img src="assets/img/product_category/product-cat-1.jpg"
+                                            <a href="shop.html"><Image height={200} width={200} src="/assets/img/browsemore/1.jpg"
                                                 alt="product-img" /></a>
                                         </div>
                                         <div className="product-category-inner">
@@ -2544,7 +2533,7 @@ const Home = () => {
                                     </div>
                                     <div className="product-category-single pos-rel">
                                         <div className="product-category-img">
-                                            <a href="shop.html"><img src="assets/img/product_category/product-cat-2.jpg"
+                                            <a href="shop.html"><Image height={200} width={200} src="/assets/img/browsemore/2.jpg"
                                                 alt="product-img" /></a>
                                         </div>
                                         <div className="product-category-inner">
@@ -2559,7 +2548,7 @@ const Home = () => {
                                     </div>
                                     <div className="product-category-single pos-rel">
                                         <div className="product-category-img">
-                                            <a href="shop.html"><img src="assets/img/product_category/product-cat-3.jpg"
+                                            <a href="shop.html"><Image height={200} width={200} src="/assets/img/browsemore/3.jpg"
                                                 alt="product-img" /></a>
                                         </div>
                                         <div className="product-category-inner">
@@ -2574,7 +2563,7 @@ const Home = () => {
                                     </div>
                                     <div className="product-category-single pos-rel">
                                         <div className="product-category-img">
-                                            <a href="shop.html"><img src="assets/img/product_category/product-cat-4.jpg"
+                                            <a href="shop.html"><Image height={200} width={200} src="/assets/img/browsemore/4.jpg"
                                                 alt="product-img" /></a>
                                         </div>
                                         <div className="product-category-inner">
@@ -2589,7 +2578,7 @@ const Home = () => {
                                     </div>
                                     <div className="product-category-single pos-rel">
                                         <div className="product-category-img">
-                                            <a href="shop.html"><img src="assets/img/product_category/product-cat-5.jpg"
+                                            <a href="shop.html"><Image height={200} width={200} src="/assets/img/browsemore/5.jpg"
                                                 alt="product-img" /></a>
                                         </div>
                                         <div className="product-category-inner">
@@ -2895,10 +2884,10 @@ const Home = () => {
                                 <p>We Support</p>
                                 <div className="card-links">
                                     <ul>
-                                        <li><a href="#"><img src="assets/img/cards/card-1.png" alt="card-img" /></a></li>
-                                        <li><a href="#"><img src="assets/img/cards/card-2.png" alt="card-img" /></a></li>
-                                        <li><a href="#"><img src="assets/img/cards/card-3.png" alt="card-img" /></a></li>
-                                        <li><a href="#"><img src="assets/img/cards/card-4.png" alt="card-img" /></a></li>
+                                        <li><a href="#"><Image height={50} width={50} src="/assets/img/cards/card-1.webp" alt="card-img" /></a></li>
+                                        <li><a href="#"><Image height={50} width={50} src="/assets/img/cards/card-2.webp" alt="card-img" /></a></li>
+                                        <li><a href="#"><Image height={50} width={50} src="/assets/img/cards/card-3.webp" alt="card-img" /></a></li>
+                                        <li><a href="#"><Image height={50} width={50} src="/assets/img/cards/card-4.webp" alt="card-img" /></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -2909,8 +2898,8 @@ const Home = () => {
                                 </div>
                                 <div className="app-links">
                                     <ul>
-                                        <li><a href="#"><img src="assets/img/apps/app-store-1.png" alt="app-img" /></a></li>
-                                        <li><a href="#"><img src="assets/img/apps/app-store-2.png" alt="app-img" /></a></li>
+                                        <li><a href="#"><Image height={200} width={200} src="/assets/img/download/app-store-1.webp" alt="app-img" /></a></li>
+                                        <li><a href="#"><Image height={200} width={200} src="/assets/img/download/app-store-2.webp" alt="app-img" /></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -2920,9 +2909,6 @@ const Home = () => {
                 <div className="copyright-area copyright1-area">
                     <div className="container">
                         <div className="copyright1-inner">
-                            <div className="copyright-text copyright1-text">
-                                Copyright by <a href="https://themeforest.net/user/bdevs/portfolio">BDevs</a>. All Rights Reserved
-                            </div>
                             <div className="copyright-link">
                                 <a href="#" className="text-btn">Privacy Policy</a>
                                 <a href="#" className="text-btn">Terms & Conditions</a>
@@ -2932,10 +2918,10 @@ const Home = () => {
                                 <p>Follow Us:</p>
                                 <div className="social__links">
                                     <ul>
-                                        <li><a href="#"><i className="fab fa-facebook-f"></i></a></li>
-                                        <li><a href="#"><i className="fab fa-twitter"></i></a></li>
-                                        <li><a href="#"><i className="fab fa-instagram"></i></a></li>
-                                        <li><a href="#"><i className="fab fa-pinterest-p"></i></a></li>
+                                        <li><a href="#"><BsFacebook /></a></li>
+                                        <li><a href="#"><BsTwitter /></a></li>
+                                        <li><a href="#"><BsInstagram /></a></li>
+                                        <li><a href="#"><BsPinterest /></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -2950,8 +2936,8 @@ const Home = () => {
                 <div id="loading-center">
                     <div id="loading-center-absolute">
                         <div className="loading-icon text-center d-flex flex-column align-items-center justify-content-center">
-                            <img src="assets/img/logo/logo-text.png" alt="logo-img" />
-                            <img className="loading-logo" src="assets/img/logo/preloader.svg" alt="img" />
+                            <Image height={200} width={200} src="/assets/img/logo/logo-text.png" alt="logo-img" />
+                            {/* <Image height={200} width={200} className="loading-logo" src="/assets/img/logo/preloader.svg" alt="img" /> */}
                         </div>
                     </div>
                 </div>
