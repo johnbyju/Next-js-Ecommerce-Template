@@ -1,7 +1,8 @@
 import { Facebook } from "lucide-react";
 import Image from "next/image";
 import React from "react";
-import { BsCart, BsFacebook, BsHeart, BsInstagram, BsPinterest, BsTwitter } from "react-icons/bs";
+import { BsCart, BsFacebook, BsHeart, BsInstagram, BsPinterest, BsSearch, BsTwitter} from "react-icons/bs";
+import { RxAvatar } from "react-icons/rx";
 
 
 const Home = () => {
@@ -103,28 +104,27 @@ const Home = () => {
                                     <div className="header-main-right header-main-right-header1">
                                         <div className="action-list d-none d-xl-flex action-list-header2">
                                             <div className="action-item action-item-cart">
-                                                <a href="javascript:void(0)" className="view-cart-button">
-                                                    <BsCart />
+                                                <a href="#" className="view-cart-button">
+                                                    <BsCart className="heading-icon"/>
                                                     <span className="action-item-number">3</span></a>
                                                 <a href="#" className="cart-items-price">$78.00</a>
                                             </div>
                                             <div className="action-item action-item-wishlist">
-                                                <a href="javascript:void(0)" className="view-wishlist-button">
-                                                    <i className="pl-32"><BsHeart /></i>
-                                                    <span className="action-item-number">2</span></a>
+                                                <a href="#" className="view-wishlist-button">
+                                                    <BsHeart className="heading-icon"/>
+                                                <span className="action-item-number">2</span></a>
                                             </div>
                                             <div className="user-btn">
                                                 <a href="login.html">
                                                     <div className="user-icon">
-                                                        <i className="flaticon-avatar"></i>
-
+                                                        <RxAvatar className="heading-icon"/>
                                                     </div>
                                                     <span><span>Sign in</span>Account</span>
                                                 </a>
                                             </div>
                                         </div>
                                         <div className="menu-bar d-xl-none ml-20">
-                                            <a className="side-toggle" href="javascript:void(0)">
+                                            <a className="side-toggle" href="#">
                                                 <div className="bar-icon">
                                                     <span></span>
                                                     <span></span>
@@ -179,7 +179,7 @@ const Home = () => {
                             </div>
                             <form action="#" className="filter-search-input header-search-2 d-none d-xl-inline-block">
                                 <input type="text" placeholder="Search Products....." />
-                                <button><i className="fal fa-search"></i></button>
+                                <button><BsSearch/></button>
                             </form>
                             <div className="header-support-social">
                                 <div className="irc-item footer-support header-bottom-support">
@@ -252,12 +252,12 @@ const Home = () => {
                                 <div className="offset-widget mb-40">
                                     <div className="action-list action-list-header1">
                                         <div className="action-item action-item-cart">
-                                            <a href="javascript:void(0)" className="view-cart-button">
+                                            <a href="#" className="view-cart-button">
                                                 <i className="fal fa-shopping-bag"></i>
                                                 <span className="action-item-number">3</span></a>
                                         </div>
                                         <div className="action-item action-item-wishlist">
-                                            <a href="javascript:void(0)" className="view-wishlist-button">
+                                            <a href="#" className="view-wishlist-button">
                                                 <i className="fal fa-heart"></i>
                                                 <span className="action-item-number">2</span></a>
                                         </div>
